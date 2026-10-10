@@ -1,9 +1,9 @@
-# SpecForge — Architecture
+# Specora — Architecture
 
 **Process Data Sheet (PDS) → Mechanical Data Sheet (MDS) → auditable vendor bid evaluation**
 
 The lane layout mirrors the reference image in the problem statement (layout only — every
-block below is SpecForge's own content):
+block below is Specora's own content):
 
 ```
 ┌──────────────┐   ┌─────────────────────────┐   ┌──────────────────────────┐
@@ -64,7 +64,7 @@ source pointer is rejected — `Ungrounded values` on the Evidence page must rea
 
 ## Storage
 
-* SQLite (`specforge.db`): hash-chained `audit`, `feedback`, `time_study`, vendor `replies`.
+* SQLite (`specora.db`): hash-chained `audit`, `feedback`, `time_study`, vendor `replies`.
 * `rules/*.yaml`: vessel rules, materials, aliases (grows via alias learning), requirements,
   enquiry clauses.
 * `data/ground_truth.json`: canonical values, the 11 seeded traps, expected vendor verdicts.

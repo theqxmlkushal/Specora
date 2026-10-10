@@ -166,13 +166,13 @@ def _tamper(conn) -> str:
 def _time_study():
     st.markdown("#### Time study")
     st.caption("Enter **real measurements only** — a teammate does one PDS→MDS by hand, "
-               "you do the same one with SpecForge.")
+               "you do the same one with Specora.")
     conn = S.get_conn()
     with st.form("ts"):
         c1, c2, c3 = st.columns(3)
         who = c1.text_input("Who measured", value="")
         man = c2.number_input("Manual PDS → MDS (minutes)", 0.0, 2000.0, 0.0, 1.0)
-        tool = c3.number_input("With SpecForge (minutes)", 0.0, 2000.0, 0.0, 1.0)
+        tool = c3.number_input("With Specora (minutes)", 0.0, 2000.0, 0.0, 1.0)
         note = st.text_input("Note (optional)")
         if st.form_submit_button("Save measurement", type="primary") and man > 0:
             db.add_time_study(conn, who or "tester", man, tool, note)
@@ -220,10 +220,10 @@ def _architecture():
                 f"<div style='font-weight:800;font-size:.82rem;color:{color}'>{title}</div>"
                 f"{body}</div>", unsafe_allow_html=True)
     st.caption("Same lane layout as the problem-statement reference image; every block is "
-               "SpecForge's own content. Full description: `SPECFORGE_ARCHITECTURE.md`.")
-    if config.ROOT.joinpath("SPECFORGE_ARCHITECTURE.md").exists():
-        with st.expander("SPECFORGE_ARCHITECTURE.md"):
-            st.code(config.ROOT.joinpath("SPECFORGE_ARCHITECTURE.md").read_text(encoding="utf-8"),
+               "Specora's own content. Full description: `SPECORA_ARCHITECTURE.md`.")
+    if config.ROOT.joinpath("SPECORA_ARCHITECTURE.md").exists():
+        with st.expander("SPECORA_ARCHITECTURE.md"):
+            st.code(config.ROOT.joinpath("SPECORA_ARCHITECTURE.md").read_text(encoding="utf-8"),
                     language="markdown")
 
 

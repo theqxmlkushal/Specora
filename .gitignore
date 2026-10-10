@@ -14,7 +14,7 @@ venv/
 .mypy_cache/
 
 # Runtime state (regenerated on every run: audit log, feedback, time study)
-specforge.db
+specora.db
 *.db-journal
 *.db-wal
 *.db-shm

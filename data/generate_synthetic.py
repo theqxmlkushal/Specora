@@ -1,4 +1,4 @@
-"""Generate the synthetic, sanitised demo corpus for SpecForge.
+"""Generate the synthetic, sanitised demo corpus for Specora.
 
 Run once:  python data/generate_synthetic.py
 

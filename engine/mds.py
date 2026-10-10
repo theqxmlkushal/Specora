@@ -223,7 +223,7 @@ def export_mds(rows: List[MdsRow], template, out_path) -> str:
         row[4].value = r.method
         row[5].value = r.source
         if r.trace:
-            cm = Comment(r.trace, "SpecForge")
+            cm = Comment(r.trace, "Specora")
             cm.width, cm.height = 340, 120
             row[2].comment = cm
     wb.save(str(out_path))

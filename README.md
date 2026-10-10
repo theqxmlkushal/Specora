@@ -1,8 +1,8 @@
-# SpecForge
+# Specora
 
 **Process Data Sheet → Mechanical Data Sheet → auditable vendor-bid evaluation.**
 
-> *"SpecForge turns a Process Data Sheet into an engineer-approved Mechanical Data Sheet and an
+> *"Specora turns a Process Data Sheet into an engineer-approved Mechanical Data Sheet and an
 > auditable vendor-bid evaluation, where every value is traceable to its source, every number
 > comes from deterministic code, and AI is never allowed to invent data."*
 

@@ -110,12 +110,12 @@ EXPECT = {
 
 def main() -> int:
     backup = ALIASES.read_text(encoding="utf-8")
-    tmp = Path(tempfile.gettempdir()) / "specforge_flow"
+    tmp = Path(tempfile.gettempdir()) / "specora_flow"
     tmp.mkdir(parents=True, exist_ok=True)
     flow_json = tmp / "flow.json"
     if flow_json.exists():
         flow_json.unlink()
-    script = Path(tempfile.gettempdir()) / "specforge_flow_script.py"
+    script = Path(tempfile.gettempdir()) / "specora_flow_script.py"
     script.write_text(TMPL.format(root=str(ROOT), tests=str(ROOT / "tests"),
                                   tmp=str(tmp), out_json=str(flow_json)),
                       encoding="utf-8")

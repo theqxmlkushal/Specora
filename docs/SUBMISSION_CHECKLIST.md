@@ -1,4 +1,4 @@
-# Definition of Done — SpecForge (prototype submission)
+# Definition of Done — Specora (prototype submission)
 
 Run everything offline, no API key:
 

@@ -89,7 +89,7 @@ def export_tbe(out_path, results: List[ReqResult], sc: Dict, rob: Dict | None,
     wb = Workbook()
     ws = wb.active
     ws.title = "TBE"
-    ws.append(["TECHNICAL BID EVALUATION — SpecForge (prototype)"])
+    ws.append(["TECHNICAL BID EVALUATION — Specora (prototype)"])
     ws["A1"].font = Font(bold=True, size=13)
     ws.append([])
     ws.append(["Scoring points"] + [f"{k}={v}" for k, v in sc["points"].items()])

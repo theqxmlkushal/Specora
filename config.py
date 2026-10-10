@@ -1,4 +1,4 @@
-"""SpecForge configuration: paths, gate thresholds, TBE defaults.
+"""Specora configuration: paths, gate thresholds, TBE defaults.
 
 Everything the UI or engine needs that is a *constant* lives here so that
 views stay declarative and the engine stays pure.
@@ -17,7 +17,7 @@ VENDOR_DIR = DATA_DIR / "vendor"
 TEMPLATE_DIR = ROOT / "templates"
 MDS_TEMPLATE = TEMPLATE_DIR / "MDS_template.xlsx"
 GROUND_TRUTH = DATA_DIR / "ground_truth.json"
-DB_PATH = ROOT / "specforge.db"
+DB_PATH = ROOT / "specora.db"
 
 # ---------------------------------------------------------------- rules files
 RULES_VESSEL = RULES_DIR / "vessel_rules.yaml"

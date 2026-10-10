@@ -25,7 +25,7 @@ run({page!r})
 
 
 def main() -> int:
-    tmp = Path(tempfile.gettempdir()) / "specforge_smoke"
+    tmp = Path(tempfile.gettempdir()) / "specora_smoke"
     tmp.mkdir(parents=True, exist_ok=True)
     fails = 0
     for page in PAGES:

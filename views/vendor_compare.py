@@ -120,7 +120,7 @@ def _export_register(df: pd.DataFrame, out: Path):
     wb = Workbook()
     ws = wb.active
     ws.title = "Deviations"
-    ws.append(["SpecForge — deviation register (prototype)"])
+    ws.append(["Specora — deviation register (prototype)"])
     ws["A1"].font = Font(bold=True, size=13)
     ws.append([])
     ws.append(list(df.columns))

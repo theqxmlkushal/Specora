@@ -1,4 +1,4 @@
-"""SpecForge — shell: theme, navigation, routing."""
+"""Specora — shell: theme, navigation, routing."""
 from __future__ import annotations
 
 import streamlit as st
@@ -18,7 +18,7 @@ PAGES = [
     ("Evidence", "evidence", "shield-check"),
 ]
 
-st.set_page_config(page_title="SpecForge — PDS → MDS → TBE", page_icon="🏭",
+st.set_page_config(page_title="Specora — PDS → MDS → TBE", page_icon="🏭",
                    layout="wide", initial_sidebar_state="expanded")
 styles.inject_css()
 S.init_state()
@@ -27,7 +27,7 @@ conn = S.get_conn()
 
 # ------------------------------------------------------------------ sidebar
 with st.sidebar:
-    st.markdown("### 🏭 **SpecForge**")
+    st.markdown("### 🏭 **Specora**")
     st.markdown("<div class='sub'>Process Data Sheet → MDS → TBE</div>",
                 unsafe_allow_html=True)
     st.divider()

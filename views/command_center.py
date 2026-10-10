@@ -18,7 +18,7 @@ STEPS = [
 
 
 def render() -> None:
-    st.markdown("<div class='hero'>SpecForge</div>", unsafe_allow_html=True)
+    st.markdown("<div class='hero'>Specora</div>", unsafe_allow_html=True)
     st.markdown(f"<div class='sub'>{config.APP_TAGLINE}</div>", unsafe_allow_html=True)
     st.write("")
 
