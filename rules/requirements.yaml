@@ -1,0 +1,17 @@
+# MDS requirement list.  required value is looked up from the approved MDS at
+# runtime for source: MDS / CODE; for source: ENQUIRY / MATERIAL_SPEC the value
+# is static (see enquiry.yaml / materials.yaml).
+requirements:
+  - { id: R01, key: design_pressure,    op: ">=",   source: MDS,           category: Design basis,        critical: true,  weight: 3 }
+  - { id: R02, key: design_temperature, op: ">=",   source: MDS,           category: Design basis,        critical: true,  weight: 2 }
+  - { id: R03, key: shell_material,     op: "==",   source: MDS,           category: Material,            critical: true,  weight: 3 }
+  - { id: R04, key: shell_thickness,    op: ">=",   source: MDS,           category: Design basis,        critical: true,  weight: 3 }
+  - { id: R05, key: corrosion_allowance,op: ">=",   source: MDS,           category: Material,            critical: false, weight: 2 }
+  - { id: R06, key: radiography,        op: ">=",   source: CODE,          category: Fabrication & NDE,   critical: false, weight: 2, order: [none, spot, full] }
+  - { id: R07, key: hydrotest_pressure, op: ">=",   source: CODE,          category: Testing,             critical: false, weight: 2 }
+  - { id: R08, key: design_code,        op: "==",   source: CODE,          category: Documentation,       critical: true,  weight: 2 }
+  - { id: R09, key: pwht,               op: "==",   source: CODE,          category: Fabrication & NDE,   critical: false, weight: 1 }
+  - { id: R10, key: certificates,       op: "contains", value: "EN 10204 3.1", source: ENQUIRY, category: Documentation, critical: false, weight: 1 }
+  - { id: R11, key: inspection_witness, op: "contains", value: "Witness at hydrotest", source: ENQUIRY, category: Documentation, critical: false, weight: 1 }
+  - { id: R12, key: painting,           op: "contains", value: "3-coat epoxy", source: ENQUIRY, category: Documentation, critical: false, weight: 1 }
+  - { id: R13, key: delivery_documents, op: "contains", value: "packing list", source: ENQUIRY, category: Documentation, critical: false, weight: 1 }

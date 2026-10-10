@@ -1,0 +1,126 @@
+# Field-name synonyms.  Exact hit -> GREEN eligible; fuzzy match (rapidfuzz) is
+# tried only when these all fail.  Entries appended by the alias-learning demo
+# are marked learned: true and are re-read on every run.
+aliases:
+  tag_no:
+    - tag no
+    - tag number
+    - equipment tag
+    - equipment number
+    - item no
+    - equipment tag no
+  fluid:
+    - fluid
+    - process fluid
+    - service
+    - process service
+    - contained fluid
+    - fluid handled
+  operating_pressure:
+    - operating pressure
+    - operating press
+    - normal operating pressure
+    - process pressure
+    - p op
+    - operating pressure gauge
+    - maximum operating pressure
+  operating_temperature:
+    - operating temperature
+    - operating temp
+    - normal operating temperature
+    - process temperature
+    - t op
+    - maximum operating temperature
+  design_pressure:
+    - design pressure
+    - design press
+    - p design
+    - design pressure gauge
+    - maximum allowable working pressure
+  design_temperature:
+    - design temperature
+    - design temp
+    - t design
+    - maximum design temperature
+  inside_diameter:
+    - inside diameter
+    - internal diameter
+    - inner diameter
+    - vessel id
+    - id
+    - bore
+    - internal dia
+  tan_to_tan_length:
+    - tan to tan length
+    - tangent to tangent
+    - t t length
+    - tt length
+    - length
+    - shell length
+  corrosion_allowance:
+    - corrosion allowance
+    - ca
+    - corrosion margin
+    - nominal corrosion allowance
+    - minimum corrosion allowance
+  radiography:
+    - radiography
+    - radiography type
+    - rt
+    - x ray
+    - x-ray
+    - radiographic examination
+  design_code:
+    - design code
+    - code
+    - code of construction
+    - construction code
+  h2s_ppm:
+    - h2s
+    - h2s ppm
+    - h2s content
+    - hydrogen sulphide
+    - hydrogen sulfide
+    - h2s concentration
+  mdmt_c:
+    - mdmt
+    - minimum design metal temperature
+    - minimum design temperature
+  shell_material:
+    - shell material
+    - material
+    - material of construction
+    - plate material
+    - shell plate material
+  shell_thickness:
+    - shell thickness
+    - plate thickness
+    - nominal thickness
+    - required thickness
+    - t nominal
+  hydrotest_pressure:
+    - hydrotest pressure
+    - hydrostatic test pressure
+    - hydro test pressure
+    - test pressure
+  pwht:
+    - pwht
+    - post weld heat treatment
+    - post-weld heat treatment
+  certificates:
+    - certificates
+    - certificate type
+    - material certificates
+    - en 10204
+  inspection_witness:
+    - inspection witness
+    - witness point
+    - client witness
+  painting:
+    - painting
+    - paint system
+    - surface protection
+  delivery_documents:
+    - delivery documents
+    - shipping documents
+    - document dossier

@@ -1,0 +1,11 @@
+# PLACEHOLDER stresses: verify against ASME II-D (CONFIRM WITH EXPERT)
+materials:
+  SA-516-70:      { allowable_mpa: 138, max_temp_c: 343, min_temp_c: -29 }
+  SA-516-70N-HIC: { allowable_mpa: 138, max_temp_c: 343, min_temp_c: -46 }
+  SA-240-316L:    { allowable_mpa: 115, max_temp_c: 400, min_temp_c: -196 }
+
+selection:       # first match wins
+  - { when: { h2s_ppm_gt: 0 },            select: SA-516-70N-HIC, note: "Sour service: HIC/SSC resistant" }
+  - { when: { fluid_contains: [chloride, seawater, acid] }, select: SA-240-316L, note: "Corrosive fluid" }
+  - { when: { mdmt_c_lt: -29 },           select: SA-516-70N-HIC, note: "Low temperature impact tested" }
+  - { default: true,                      select: SA-516-70,      note: "General service" }

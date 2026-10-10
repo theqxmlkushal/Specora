@@ -1,0 +1,15 @@
+streamlit>=1.40
+streamlit-option-menu
+pandas
+numpy
+plotly
+openpyxl
+pyyaml
+pydantic>=2
+rapidfuzz
+python-dotenv
+pytest
+pdfplumber          # optional: PDF input
+reportlab           # optional: generate a sample PDF PDS
+anthropic           # optional: LLM extraction help + wording
+# playwright         # optional, dev only: python scripts/make_screenshots.py

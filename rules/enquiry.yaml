@@ -1,0 +1,19 @@
+# Enquiry / ITT clauses — one of the four requirement sources named in the
+# problem statement.  The other three: MDS, MATERIAL_SPEC, CODE.
+enquiry:
+  - id: R10
+    key: certificates
+    text: "Certification to EN 10204 3.1 for all pressure-containing and pressure-retaining parts."
+    value: "EN 10204 3.1"
+  - id: R11
+    key: inspection_witness
+    text: "Client witness at hydrostatic test shall be offered as a hold point."
+    value: "Witness at hydrotest"
+  - id: R12
+    key: painting
+    text: "External surface protection: 3-coat epoxy system, 300 micron DFT."
+    value: "3-coat epoxy"
+  - id: R13
+    key: delivery_documents
+    text: "Delivery to include material certificates, QA dossier and packing list."
+    value: "packing list"

@@ -1,0 +1,23 @@
+# Demo rule values — CONFIRM WITH EXPERT before any real use.
+equipment: unfired_pressure_vessel
+design_code: "ASME VIII-1"
+design_code_note: "ASME BPVC Section VIII Division 1 — edition to be confirmed with expert"
+
+design_pressure:  { margin_pct: 10, min_margin_barg: 2.0 }   # P_design = max(P_op*1.10, P_op+2 bar)
+design_temperature: { margin_c: 20 }                          # T_design = T_op_max + 20
+hydrotest: { factor: 1.3, stress_ratio: 1.0 }                 # ASME VIII-1 UG-99(b), confirm edition
+joint_efficiency:
+  full: 1.0
+  spot: 0.85
+  none: 0.70
+thickness_ladder_mm: [6, 8, 10, 12, 14, 16, 18, 20, 22, 25, 28, 32, 36, 40]
+pwht_required_if: { thickness_mm_gt: 32, sour_service: true }
+required_fields:
+  - tag_no
+  - fluid
+  - operating_pressure
+  - operating_temperature
+  - inside_diameter
+  - tan_to_tan_length
+  - corrosion_allowance
+  - radiography

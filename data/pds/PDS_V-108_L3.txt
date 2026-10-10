@@ -1,0 +1,12 @@
+PROCESS DATA SHEET - UNFIRED PRESSURE VESSEL
+Tag No: V-108
+Fluid: Produced water, H2S 250 ppm
+Operating pressure: 12 barg
+Operating temperature: 80 degC
+Design pressure: 14 barg
+Design temperature: 100 degC
+Inside diameter: 900 mm
+Tan to tan length: 2500 mm
+Corrosion allowance: 3 mm
+Radiography: full
+MDMT: -40 degC

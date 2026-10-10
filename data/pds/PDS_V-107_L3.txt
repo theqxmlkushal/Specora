@@ -1,0 +1,12 @@
+PROCESS DATA SHEET - UNFIRED PRESSURE VESSEL
+Tag No: V-107
+Fluid: Sour condensate gas
+Operating pressure: 9.0 barg
+Design pressure: 11.0 bara
+Operating temperature: 95 degC
+Design temperature: 115 degC
+Inside diameter: 36 in
+Tan to tan length: 10000 mm
+Corrosion allowance: 3 mm
+Radiography: full
+Remarks: insulated with 50 mm rockwool
